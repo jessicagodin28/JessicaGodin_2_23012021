@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e54925222.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
         h1{
             font-family: 'Raleway', sans-serif;
         }
@@ -18,53 +19,108 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li id="logo"><a href="#">Reservia</a></li>
-                <li><a href="#inscription">S'inscrire</a></li>
-                <li><a href="#activites">Activités</a></li>
-                <li><a href="#hebergements">Hébergements</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="intro">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre de ville ou en pleine nature</p>
     </div>
-    <section id="Recherche">
-        <form class="search"></form>
-    </section>
-
-    <footer>
-        <div class="contenu-foot">
-
-            <div class="bloc footer-propos">
-                <h3>A propos</h3>
-                <ul class="liste-propos">
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialités</a></li>
-                </ul>
+    <!-----Header----->
+        <header>
+            <div class="containerheader">
+                <div id="logo">
+                    <img class="Logo" src="img/logo/Reservia.svg" alt="LogoReservia">
+                </div>
+                <nav class="headernav">
+                    <ul>
+                        <li><a href="#Hebergements">Hébergements</a></li>
+                        <li><a href="#Activites">Activités</a></li>
+                    </ul>
+                <div class="inscrire">
+                    <a href="#"><strong>S'inscrire</strong></a>
+                </div>
+                </nav>
+            </div>
+   </header>
+   <main>
+        <!-- SEARCH -->
+        <section id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class="formsearch">
+            <form class="recherche" action="#">
+            <button type="none">
+                <i class="fas fa-map-marker-alt"></i>
+            </button>
+            <input class="searchinput" type="search" placeholder="Marseille, France" size="1">
+            <button class="btnsearch" type="submit">
+                <p class="textbtn">Rechercher</p>
+            </button> 
+          </form>
+         </div>
+        <!-----Filtres----->
+        <div class="filtres">
+            <h2 class="searchfilterstitle">Filtres</h2>
+         <div class="content">
+             <div class="btnfiltres">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>Economique</p>
+             </div>
+             <div class="btnfiltres">
+                <i class="fas fa-child"></i>
+                <h3>Familial</h3>
+             </div>
+             <div class="btnfiltres">
+                <i class="fas fa-heart"></i>
+                <p>Romantique</p>
+             </div>
+             <div class="btnfiltres">
+                <i class="fas fa-dog"></i>
+                <p>Animaux autorisés</p>
+             </div>
+         </div>   
+        </div>
+        <div class="logementstxt">
+            <p><i class="fas fa-info"></i></p>
+            <p class="nblogements">Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
+        </section>
+        <!-----Hebergements----->
+        <section id="hebergement">
+            <div class="reservation containt">
+                <div class="hebergementMarseille">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
             </div>
 
-            <div class="bloc footer-hebergement">
-                <h3>Nos Hébergements</h3>
-                <ul class="liste-hebergement">
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hotel</a></li>
-                </ul>
-            </div>
+        </section>
+    </main>
+<footer>
+    <div class="contenu-foot">
 
-            <div class="bloc footer-assist">
-                <h3>Assistance</h3>
-                <ul class="liste-propos">
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
-            </div>
-            
+        <div class="bloc footer-propos">
+            <h3>A propos</h3>
+            <ul class="liste-propos">
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialités</a></li>
+            </ul>
         </div>
 
-    </footer>
+        <div class="bloc footer-hebergement">
+            <h3>Nos Hébergements</h3>
+            <ul class="liste-hebergement">
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hotel</a></li>
+            </ul>
+        </div>
+
+        <div class="bloc footer-assist">
+            <h3>Assistance</h3>
+            <ul class="liste-propos">
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+</footer>
+
 </body>
 </html>

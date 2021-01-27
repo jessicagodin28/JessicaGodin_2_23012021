@@ -1,1 +1,83 @@
-style
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0;
+ }
+.containerheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: top;
+    }
+.headernav {
+    display: flex;
+    padding: 2rem;
+    margin-right: 0;
+    vertical-align: top;
+  }
+.Logohaut {
+    cursor: pointer;
+ }
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    color:black;
+    
+  }
+  
+header ul li:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+header ul li:active {
+    border-top: 3px solid #0065fc;
+    color: #0065fc; 
+
+}
+  header ul li {
+    margin-left: 1.8rem;
+    transition-duration: 0.1s;
+    
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-left: 2.3rem;
+    transition-duration: 0.1s;
+    
+  }
+  
+.inscrire a {
+    color: #0065fc;
+    margin-right: 0;
+  }
+  
+.inscrire a:hover {
+    
+    padding-top: 21px;
+  }
+  
+.inscrire {
+    padding-left: 28px;
+  }
+
+.Logo{
+    padding: 0 2rem;
+    height: 2.813rem;
+    vertical-align: top;
+   }
