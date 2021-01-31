@@ -40,19 +40,26 @@
     </header>
     <main>
         <!-- SEARCH -->
-        <section id="search">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <div class="formsearch">
-                <form class="recherche" action="#">
-                    <button type="button">
+        <section class="search">
+            <div class="search_text">
+                <h1 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="search_subtitle">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="search_bloc">
+                <div class="search_map">
+                    <div class="map">
                         <i class="fas fa-map-marker-alt"></i>
-                    </button>
-                    <input class="searchinput" type="search" placeholder="Marseille, France" size="1">
-                    <button class="btnsearch" type="submit">
-                        <p class="textbtn">Rechercher</p>
-                    </button>
-                </form>
+                    </div>
+                    <div class="search_input">
+                        <form method="post" action="traitement.php">
+                            <input class="search_input_zone" type="text" name="ville" placeholder="Marseille, France"
+                                size="1">
+                            <button class="search_btn" type="submit">
+                                <span class="search_btn_text">Rechercher</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <!-----Filtres----->
             <div class="filter">
