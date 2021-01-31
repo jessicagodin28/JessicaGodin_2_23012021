@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,119 +9,127 @@
     <script src="https://kit.fontawesome.com/9e54925222.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
-        h1{
+
+        h1 {
             font-family: 'Raleway', sans-serif;
         }
-        body{
+
+        body {
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
+            margin: 0;
         }
-        </style>
+    </style>
 </head>
+
 <body>
-    <header>
-    </div>
     <!-----Header----->
-        <header>
-            <div class="containerheader">
-                <div id="logo">
-                    <img class="Logo" src="img/logo/Reservia.svg" alt="LogoReservia">
-                </div>
-                <nav class="headernav">
-                    <ul>
-                        <li><a href="#Hebergements">Hébergements</a></li>
-                        <li><a href="#Activites">Activités</a></li>
-                    </ul>
-                <div class="inscrire">
-                    <a href="#"><strong>S'inscrire</strong></a>
-                </div>
-                </nav>
+    <header>
+        <div class="containerheadernav">
+            <div id="logo">
+                <img class="Logo" src="img/logo/Reservia.svg" alt="LogoReservia">
             </div>
-   </header>
-   <main>
+            <nav class="headernav">
+                <ul>
+                    <li class="hosting"><a href="#Hebergements">Hébergements</a></li>
+                    <li class="activity"><a href="#Activites">Activités</a></li>
+                    <li class="signup"><a href="inscrire"><strong>s'inscrire</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
         <!-- SEARCH -->
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="formsearch">
-            <form class="recherche" action="#">
-            <button type="none">
-                <i class="fas fa-map-marker-alt"></i>
-            </button>
-            <input class="searchinput" type="search" placeholder="Marseille, France" size="1">
-            <button class="btnsearch" type="submit">
-                <p class="textbtn">Rechercher</p>
-            </button> 
-          </form>
-         </div>
-        <!-----Filtres----->
-        <div class="filtres">
-            <h2 class="searchfilterstitle">Filtres</h2>
-         <div class="content">
-             <div class="btnfiltres">
-                <i class="fas fa-money-bill-wave"></i>
-                <p>Economique</p>
-             </div>
-             <div class="btnfiltres">
-                <i class="fas fa-child"></i>
-                <h3>Familial</h3>
-             </div>
-             <div class="btnfiltres">
-                <i class="fas fa-heart"></i>
-                <p>Romantique</p>
-             </div>
-             <div class="btnfiltres">
-                <i class="fas fa-dog"></i>
-                <p>Animaux autorisés</p>
-             </div>
-         </div>   
-        </div>
-        <div class="logementstxt">
-            <p><i class="fas fa-info"></i></p>
-            <p class="nblogements">Plus de 500 logements sont disponible dans cette ville</p>
-        </div>
-        </section>
-        <!-----Hebergements----->
-        <section id="hebergement">
-            <div class="reservation containt">
-                <div class="hebergementMarseille">
-                    <h2>Hébergements à Marseille</h2>
+                <form class="recherche" action="#">
+                    <button type="button">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                    <input class="searchinput" type="search" placeholder="Marseille, France" size="1">
+                    <button class="btnsearch" type="submit">
+                        <p class="textbtn">Rechercher</p>
+                    </button>
+                </form>
+            </div>
+            <!-----Filtres----->
+            <div class="filter">
+                <h2 class="filter_title">Filtres</h2>
+                <div class="filter_items">
+                    <div class="filter_button">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p>Economique</p>
+                    </div>
+                    <div class="btnfiltres">
+                        <i class="fas fa-child"></i>
+                        <h3>Familial</h3>
+                    </div>
+                    <div class="btnfiltres">
+                        <i class="fas fa-heart"></i>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="btnfiltres">
+                        <i class="fas fa-dog"></i>
+                        <p>Animaux autorisés</p>
+                    </div>
                 </div>
             </div>
+            <div class="logementstxt">
+                <p><i class="fas fa-info"></i></p>
+                <p class="nblogements">Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
+        </section>
+        <!-----Hebergements----->
+        <section id="hosting">
+            <div class="hosting_main">
+                <div class="hosting_main_marseille">
+                    <div class="hosting_title">
+                        <h2>Hébergements à Marseille</h2>
+                    </div>
+                    <div class="hosting_card">
+                        <figure>
+                            <img src="/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="image chambre">
+                            <figcaption>
+                                <p><strong>Auberge la Cannebière</strong></p>
+                            </figcaption>
+                        </figure>
+                    </div>
 
+                </div>
+            </div>
         </section>
     </main>
-<footer>
-    <div class="contenu-foot">
-
-        <div class="bloc footer-propos">
-            <h3>A propos</h3>
-            <ul class="liste-propos">
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialités</a></li>
+    <!-----FOOTER----->
+    <footer class="footer_contenu">
+        <div class="footer_bloc_propos">
+            <h3 class="footer_tilte">A propos</h3>
+            <ul class="list_propos">
+                <li><a href="#" class="footer_link">Hébergement du site</a></li>
+                <li><a href="#" class="footer_link">Conditions générales de vente</a></li>
+                <li><a href="#" class="footer_link">Données et confidentialités</a></li>
             </ul>
         </div>
 
-        <div class="bloc footer-hebergement">
-            <h3>Nos Hébergements</h3>
-            <ul class="liste-hebergement">
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hotel</a></li>
+        <div class="footer_bloc_hosting">
+            <h3 class="footer_title">Nos Hébergements</h3>
+            <ul class="list_hosting">
+                <li><a href="#" class="footer_link">Charte qualité</a></li>
+                <li><a href="#" class="footer_link">Soumettre votre hotel</a></li>
             </ul>
         </div>
 
-        <div class="bloc footer-assist">
-            <h3>Assistance</h3>
-            <ul class="liste-propos">
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
+        <div class="footer_bloc_assist">
+            <h3 class="footer_tilte">Assistance</h3>
+            <ul class="list_assist">
+                <li><a href="#" class="footer_link">Centre d'aide</a></li>
+                <li><a href="#" class="footer_link">Nous contacter</a></li>
             </ul>
         </div>
-        
-    </div>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>

@@ -1,83 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 h1{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;/* police titre */
     font-size: 2em;
 }
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
 
-body{
+.body{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    margin: 0;
+    margin: 0
+    min-width: min-content;
  }
-.containerheader{
+
+.containerheadernav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    vertical-align: top;
+    padding: auto;
     }
 .headernav {
     display: flex;
-    padding: 2rem;
+    padding: 0;
     margin-right: 0;
-    vertical-align: top;
   }
 .Logohaut {
-    cursor: pointer;
+    cursor: pointer; /* pointeur souris */
  }
 
-header ul {
+.headernav ul {
     display: flex;
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     margin-left: auto;
     color:black;
-    
+    font-size: 18px;
+}
+  
+.headernav ul li:hover{ /* lien au survol */
+    border-top: 3px solid blue;
+    color: #0065fc;
+    padding-top: 2rem;/* hauteur ligne bleu */
+}
+.headernav ul li {
+    margin-left: 1rem;
+    transition-duration: 0.1s;
+    border-top: 2rem solid transparent;
   }
   
-header ul li:hover{
-    border-top: 3px solid #0065fc;
-    color: #0065fc;
-}
-
-header ul li:active {
-    border-top: 3px solid #0065fc;
-    color: #0065fc; 
-
-}
-  header ul li {
-    margin-left: 1.8rem;
-    transition-duration: 0.1s;
-    
-}
-  
-a {
+.headernav a{
     text-decoration: none;
     color: black;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    margin-left: 2.3rem;
+    margin-left: 0px;
     transition-duration: 0.1s;
-    
-  }
-  
-.inscrire a {
-    color: #0065fc;
-    margin-right: 0;
-  }
-  
-.inscrire a:hover {
-    
-    padding-top: 21px;
-  }
-  
-.inscrire {
-    padding-left: 28px;
-  }
+    padding: 20px;
+    }
 
 .Logo{
     padding: 0 2rem;
-    height: 2.813rem;
+    margin-top: 1.3rem;
+    height: 2.8rem;
     vertical-align: top;
    }
+
+   /*****FOOTER*****/
+  
+.footer_contenu { /* bloc fond gris */
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+  }
+
+.footer_bloc_propos{ /* bloc à propos */
+    width: 30%;/* largeur */
+    padding: 2rem 2rem;
+  }
+
+.footer_bloc_hosting{/* bloc hébergement */
+    width: 30%;
+    padding: 2rem 2rem;
+  }
+.footer_bloc_assist{/* bloc assistance */
+  width: 30%;
+  padding: 2rem 2rem;
+}
+.footer_bloc_propos h3,
+.footer_bloc_hosting h3,
+.footer_bloc_assist h3{
+  width: 30%;/* largeur entre bloc */
+  padding: 0 2.5rem;/* alignement titre */
+  display: inline;
+}
+.list_propos,
+.list_hosting,
+.list_assist{
+  list-style-type: none;
+
+}
+.list_propos a,
+.list_hosting a,
+.list_assist a{
+  text-decoration: none;
+  color: #333;
+}
+.list_propos a:hover,
+.list_hosting a:hover,
+.list_assist a:hover{
+  color: rgb(3,3,3);
+}
+.list_hosting li{
+  padding: 5px 0;/* espace hauteur phrase */
+}
+.list_propos li{
+  padding: 5px 0;
+}
+.list_assist li{
+  padding: 5px 0;
+}
+
+  @media screen and (max-width: 900px)
+  {
+    .footer_contenu{
+      flex-direction: column;
+      padding: 1rem;
+      background-color: #F2F2F2;
+      width: 100%;
+    }
+    .footer_bloc_propos{
+      width: auto;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .footer_bloc_hosting{
+      width: 100%;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .footer_bloc_assist{
+      width: 100%;
+      padding: 0;
+      margin: 1rem 0;
+    }
+  }
