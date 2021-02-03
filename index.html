@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9e54925222.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
         h1 {
             font-family: 'Raleway', sans-serif;
@@ -31,14 +31,14 @@
             </div>
             <nav class="headernav">
                 <ul>
-                    <li class="hosting"><a href="#Hebergements">Hébergements</a></li>
-                    <li class="activity"><a href="#Activites">Activités</a></li>
-                    <li class="signup"><a href="inscrire"><strong>s'inscrire</strong></a></li>
+                    <li><a href="#Hebergements">Hébergements</a></li>
+                    <li><a href="#Activites">Activités</a></li>
+                    <li><a href="#inscrire"><strong>s'inscrire</strong></a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
         <!-- SEARCH -->
         <section class="search">
             <div class="search_text">
@@ -56,6 +56,7 @@
                                 size="1">
                             <button class="search_btn" type="submit">
                                 <span class="search_btn_text">Rechercher</span>
+                                <i class="search_icon fas fa-search"></i>
                             </button>
                         </form>
                     </div>
@@ -65,27 +66,27 @@
             <div class="filter">
                 <h2 class="filter_title">Filtres</h2>
                 <div class="filter_items">
-                    <div class="filter_button">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <p>Economique</p>
+                    <div class="filter_eco">
+                        <i class="fas fa-money-bill-wave filter_icons"></i>
+                        <p class="txt">Économique</p>
                     </div>
-                    <div class="btnfiltres">
-                        <i class="fas fa-child"></i>
-                        <h3>Familial</h3>
+                    <div class="filter_family">
+                        <i class="fas fa-child filter_icons"></i>
+                        <p class="txt">Familial</p>
                     </div>
-                    <div class="btnfiltres">
-                        <i class="fas fa-heart"></i>
-                        <p>Romantique</p>
+                    <div class="filter_heart">
+                        <i class="fas fa-heart filter_icons"></i>
+                        <p class="txt">Romantique</p>
                     </div>
-                    <div class="btnfiltres">
-                        <i class="fas fa-dog"></i>
-                        <p>Animaux autorisés</p>
+                    <div class="filter_animal">
+                        <i class="fas fa-dog filter_icons"></i>
+                        <p class="txt">Animaux autorisés</p>
                     </div>
                 </div>
             </div>
             <div class="logementstxt">
-                <p><i class="fas fa-info"></i></p>
-                <p class="nblogements">Plus de 500 logements sont disponible dans cette ville</p>
+                <p><i class="fas fa-info filter_iconsi"></i></p>
+                <p class="500">Plus de 500 logements sont disponible dans cette ville</p>
             </div>
         </section>
         <!-----Hebergements----->

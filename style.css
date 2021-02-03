@@ -8,11 +8,10 @@ h3{
   font-size: 16px;
 }
 
-.body{
+.body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin: 0
-    min-width: min-content;
  }
 
 .containerheadernav{
@@ -26,40 +25,25 @@ h3{
     padding: 0;
     margin-right: 0;
   }
-.Logohaut {
-    cursor: pointer; /* pointeur souris */
- }
-
-.headernav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
-    font-size: 18px;
-}
-  
-.headernav ul li:hover{ /* lien au survol */
-    border-top: 3px solid #0065fc;
-    color: #0065fc;
-    padding-top: 2rem;/* hauteur ligne bleu */
-}
-.headernav ul li {
-    margin-left: 1rem;
-    transition-duration: 0.1s;
-    border-top: 2rem solid transparent;
-  }
-  
-.headernav a{
+  .headernav a{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     margin-left: 0px;
-    transition-duration: 0.1s;
     padding: 20px;
-    color: black;
     }
 
+ .headernav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  font-size: 18px;
+}
+.headernav li{
+  list-style-type: none;
+  cursor: pointer;
+}
 .Logo{
     padding: 0 2rem;
     margin-top: 1.3rem;
@@ -67,64 +51,134 @@ h3{
     vertical-align: top;
    }
    /*****SEARCH*****/
+   .main{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+   }
 
    .search_title{
-    margin: 1.4em;
+    
     margin-bottom: 0.5rem;
     font-size: 1.4em;
    }
    .search_subtitle{
-     margin: 2.2em;
      margin-top: 0;
    }
    .search_bloc{
      display: flex;
      align-items: center;
      margin-top: 2rem;
-     margin-left: 2rem;
    }
    .search_map{
      display: flex;
      background-color: #F2F2F2;
-     border-radius: 0.8em 0 0 0.8em;
-     height: 3.3rem;
+     border-radius: 0.8em 0.9em 0.9em 0.8em;
      display: inline-flex;
      display: inline-flex;
      max-width: 100%;
      overflow: auto;
    }
-   .map{
+   .map{/* logo map */
      padding: 1rem;
      font-weight: 900;
      text-align: center;
    }
    
-  .search_btn{
-    background-color: #0065fc;
+  .search_btn{/* bouton de recherche */
+    background-color: #0065FC;
     color: white;
-    border: 1px #0065fc solid;
+    border: 1px #0065FC solid;
     border-radius: 0 0.8rem 0.8rem 0;
     padding: 1rem;
     font-size: 15px;
-    font-weight: bold;
 }
 .form{
   display: flex;
   justify-content: flex-start;
 }
-.search_input_zone{
+.search_input_zone{/* zone de texte */
     border: 1px #F2F2F2 solid;
     border-right: none;
     width: 13rem;
     height: 45px;
+    font-size: 1.1rem;
+   
+   }
+   .search_icon{
+     color: transparent;
    }
 
+  /*****FILTERS*****/
   
-  
-  
-  
-  
-  
+  .filter_title{
+    margin: 10px 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+    float: left;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .filter_items{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .filter_icons{
+    background-color: #deebff;
+    color: #0065fc;
+    border-radius: 100%;
+    padding: 19px;
+    margin-right: 0.5rem;
+  }
+  .filter_eco{
+    display: -webkit-box;
+    margin-right: 2rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 2em;
+    padding-right: 15px;
+  }
+   .filter_family{
+     display: -webkit-box;
+     margin-right: 2rem;
+     border: 2px solid #F2F2F2;
+     border-radius: 2em;
+     padding-right: 15px;
+   }
+   .filter_heart{
+     display: -webkit-box;
+     margin-right: 2rem;
+     border: 2px solid #F2F2F2;
+     border-radius: 2em;
+     padding-right: 15px;
+   }
+   .filter_animal{
+     display: -webkit-box;
+     margin-right: 2rem;
+     border: 2px solid #F2F2F2;
+     border-radius: 2em;
+     padding-right: 15px;
+   }
+   .txt{
+     font-weight: 600;
+   }
+  .logementstxt{
+    display: -webkit-box;
+    margin-top: 1em;
+  }
+  .filter_iconsi{
+    color: #0065fc;
+    background: white;
+    border: 1px solid #f2f2f2;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding: 5px 9px;
+    font-size: smaller;
+}
+.nblogements{
+  margin-top: 1.3em;
+  }
    
    /*****FOOTER*****/
   
