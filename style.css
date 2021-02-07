@@ -11,7 +11,9 @@ h3{
 .body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    margin: 0
+    margin: 0;
+    padding: 0;
+    height: 100%;
  }
 
 .containerheadernav{
@@ -22,8 +24,8 @@ h3{
     }
 .headernav {
     display: flex;
-    padding: 0;
-    margin-right: 0;
+    flex: auto;
+    margin-top: 0.8em;
   }
   .headernav a{
     text-decoration: none;
@@ -31,6 +33,7 @@ h3{
     font-weight: 500;
     margin-left: 0px;
     padding: 20px;
+    color: inherit;
     }
 
  .headernav ul {
@@ -50,12 +53,67 @@ h3{
     height: 2.8rem;
     vertical-align: top;
    }
+   .signup{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 2.5em;
+    font-size: large;
+   }
+   @media screen and (max-width: 650px){
+    .Logo{
+     padding: 0 2rem;
+     margin-top: 1.3rem;
+     height: 2.8rem;
+    }
+    .containerheadernav{
+     padding: 0;
+     position: relative;
+     padding-bottom: 56px;
+    }
+    .headernav{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    }
+    .headernav a{
+     margin: 1.5em;
+    }
+    .hosting{
+     text-align: center;
+     border-bottom: 3px solid #99999960;
+     margin: auto 0;
+     padding: 15px;
+     border-bottom: 3px solid #0065FC;
+     color: #0065FC;
+     width: 10em;
+    }
+    .activity{
+    text-align: center;
+     border-bottom: 3px solid #99999960;     
+     margin: auto 0;
+     padding: 15px 15px;
+    }
+    .signup{
+      padding: 2rem 0;
+      padding-top: 3em;
+    }
+  }
    /*****SEARCH*****/
+
    .main{
     max-width: 1440px;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+   }
+   @media screen and (max-width: 620px){
+     .main{
+
+     }
    }
 
    .search_title{
@@ -66,57 +124,107 @@ h3{
    .search_subtitle{
      margin-top: 0;
    }
-   .search_bloc{
-     display: flex;
-     align-items: center;
-     margin-top: 2rem;
-   }
    .search_map{
      display: flex;
+   }
+   @media screen and (max-width: 750px){
+    .map{
      background-color: #F2F2F2;
-     border-radius: 0.8em 0.9em 0.9em 0.8em;
-     display: inline-flex;
-     display: inline-flex;
-     max-width: 100%;
-     overflow: auto;
-   }
-   .map{/* logo map */
-     padding: 1rem;
-     font-weight: 900;
+     padding: 1rem 18px;
+     border-radius: 1rem 0 0 1rem;
      text-align: center;
+    }
+    .search_input_zone{
+      width: 10rem;
+      padding: 0 1.5rem;
+      height: 50px;
+      border-right: none;
+      border-left: none;
+      border-top: #F2F2F2 1px solid;
+      border-bottom: #F2F2F2 1px solid;
+    }
+    ::placeholder{
+      color: black;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .search_btn{
+     background-color: #0065FC;
+     color: white;
+     border: none;
+     border-radius: 1rem 1rem 1rem 1rem;
+     padding: 0 1rem;
+     font-size: 1rem;
+     height: 50px;
    }
-   
-  .search_btn{/* bouton de recherche */
-    background-color: #0065FC;
-    color: white;
-    border: 1px #0065FC solid;
-    border-radius: 0 0.8rem 0.8rem 0;
-    padding: 1rem;
-    font-size: 15px;
-}
-.form{
-  display: flex;
-  justify-content: flex-start;
-}
-.search_input_zone{/* zone de texte */
-    border: 1px #F2F2F2 solid;
-    border-right: none;
-    width: 13rem;
-    height: 45px;
-    font-size: 1.1rem;
-   
+   .search_btn_text{
+     display: none;
    }
-   .search_icon{
-     color: transparent;
+ }
+/****FILTERS MEDIA*****/
+@media screen and (max-width: 375px){ 
+  .filter_family {
+      display: -webkit-box;
+      border: 2px solid #F2F2F2;
+      border-radius: 2em;
+      padding-right: 15px;
+      margin-top: 1em;
    }
-
+  }
+@media screen and (max-width: 760px){
+  .filter_title{
+  margin: 30px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  }
+  .filter_items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+  }
+  .filter_family {
+    display: -webkit-box;
+    border: 2px solid #F2F2F2;
+    border-radius: 2em;
+    padding-right: 15px;
+    margin-left: 0;
+ }
+    .filter_icons {
+      background-color: #deebff;
+      color: #0065fc;
+      border-radius: 100%;
+      padding: 14px;
+      margin-right: 0.5rem;
+  }
+  .filter_animal {
+    display: -webkit-box;
+    margin-right: 2rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 2em;
+    padding-right: 15px;
+    margin-top: 0;
+  }
+  .txt {
+  font-weight: 600;
+  display: contents;
+  }
+  .filter_heart {
+  display: -webkit-box;
+  margin-right: 2rem;
+  border: 2px solid #F2F2F2;
+  border-radius: 2em;
+  padding-right: 15px;
+  margin: 1em 0;
+ }
+ }
   /*****FILTERS*****/
   
   .filter_title{
     margin: 10px 2rem 1rem 0;
     display: flex;
     align-items: center;
-    float: left;
     font-size: 1.1em;
     font-weight: 600;
   }
@@ -129,7 +237,7 @@ h3{
     background-color: #deebff;
     color: #0065fc;
     border-radius: 100%;
-    padding: 19px;
+    padding: 14px;
     margin-right: 0.5rem;
   }
   .filter_eco{
@@ -145,6 +253,7 @@ h3{
      border: 2px solid #F2F2F2;
      border-radius: 2em;
      padding-right: 15px;
+   
    }
    .filter_heart{
      display: -webkit-box;
@@ -152,16 +261,18 @@ h3{
      border: 2px solid #F2F2F2;
      border-radius: 2em;
      padding-right: 15px;
+     
    }
    .filter_animal{
      display: -webkit-box;
      margin-right: 2rem;
      border: 2px solid #F2F2F2;
      border-radius: 2em;
-     padding-right: 15px;
+     padding-right: 15px;   
    }
    .txt{
      font-weight: 600;
+     margin: auto;
    }
   .logementstxt{
     display: -webkit-box;
@@ -179,9 +290,144 @@ h3{
 .nblogements{
   margin-top: 1.3em;
   }
-   
+
+  /*****HOSTING MEDIA*****/
+  .hosting_view_more{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 620px){
+    .hosting_main{
+      background-color: transparent;
+    }
+    .hosting_card{
+      margin-left: 0;
+    }
+    .hosting_card_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .hosting_card figure{
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #eae5e5;
+    transition-duration: 0.1s;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+    }
+  }
+  /*****POPULAR****/
+  @media screen and (max-width: 620px){
+    .popular_card_img{
+      width: 100%;
+      border-radius: 1rem 0 0 1rem;
+      object-fit: cover;
+      height: 130px;
+      max-width: 120px;
+      
+      }
+      .popular_card figure{
+        padding: 0.375rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 16px #eae5e5;
+        background: white;
+        transition-duration: 0.1s;
+        margin: 0;
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        }
+      .background_grey{
+        background-color: #F2F2F2;
+      }
+  }
+/***** HOSTING *****/
+  .hosting_main{
+    /*background: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1em;*/
+  }
+  .stars{
+    color: #0065fc;
+    margin: 5px;
+  }
+  .stars_popular{
+    color: #0065fc;
+    margin: 5px;
+    padding-top: 36px;
+  }
+
+  .hosting_card,.popular_card,
+   figure figcaption p{
+    margin: 5px;
+  }
+  .popular_card figure figcaption{
+    padding-left: 1em;
+  }
+  /*****ACTIVITY*****/
+  @media screen and (max-width: 620px){
+    .activity_card_VieuxPort_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card_FortDePomegues_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card_IlesDuFrioul_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card_ParcNational_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card_NotreDame_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card_ParcLongchamp_img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 7em;
+    object-fit: cover;
+    }
+    .activity_card figure{
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #eae5e5;
+    transition-duration: 0.1s;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+    }
+    .activity_card a{
+      text-decoration: none;
+      color: black;
+      text-align: justify;
+    }
+    .activity_Marseille{
+      padding: 3em 1em;
+    }
+  }
    /*****FOOTER*****/
-  
+
 .footer_contenu { /* bloc fond gris */
     background-color: #F2F2F2;
     width: 100%;
@@ -257,6 +503,9 @@ h3{
       width: 100%;
       padding: 0;
       margin: 1rem 0;
+    }
+    .list_hosting{
+      padding-left: 2.5em;
     }
 
   }
