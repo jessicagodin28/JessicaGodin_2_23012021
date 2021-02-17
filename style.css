@@ -34,7 +34,16 @@ h3{
    font-weight: 600;
    text-decoration: none;
  }
- 
+
+ .containerheadernav_mobile{
+  display: none;
+ }
+
+ .header_logo{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+ }
 
  .headernav a{
   text-decoration: none;
@@ -53,6 +62,7 @@ h3{
   margin-top: 2em;
   font-size: large;
 }
+
 .hosting ul li{
   padding: 15px 22px;
   border-bottom: 3px solid #0065FC;
@@ -68,7 +78,9 @@ h3{
 }
 
 /*****SEARCH*****/
-
+.search{
+  margin-left: 2em;
+}
 .search_bloc{
   margin: 1.5em;
   margin-top: 2em;
@@ -119,6 +131,10 @@ h3{
   display: flex;
 }
 
+#search_icone{
+  display: none;
+}
+
 /*****FILTER*****/
 
 .filter_title{
@@ -143,6 +159,7 @@ h3{
 .filter_items{
   display: flex;
   flex-flow: row wrap;
+  margin-left: 2em;
 }
 
 .filter_eco,
@@ -157,28 +174,14 @@ h3{
   margin-right: 10px;
 }
 
-.filter_family{
-  width: 38%;
-}
-
-.filter_heart{
-  width: 46%;
-}
-
-.filter_eco{
-  width: 50%;
-}
-
-.filter_animal{
-  width: 60%;
-}
-
 .filter p{
   font-size: 15px;
 }
 
 .filter{
   margin: 1em;
+  display: flex;
+  align-items: baseline;
 }
 
 .logementstxt{
@@ -196,16 +199,22 @@ h3{
   margin-left: 1.5em;
 }
 
+.txt{
+  padding-right: 20px;
+}
+
 /*****POPULAR*****/
 
 .background_grey{
   background-color: #F2F2F2;
-  height: 37em;
+  height: 40.3em;
+  display: flow-root;
+  border-radius: 1em;
 }
 
 .popular_title{
   display: flex;
-  margin: 1em;
+  margin: 1em 3em 1em 3em;
 }
 
 .popular_card_img{
@@ -222,7 +231,7 @@ h3{
   box-shadow: 0 0 16px #eae5e5;
   background: white;
   display: flex;
-  margin: 1em;
+  margin: 0 2.5em 2.5em 2.5em;
     }
 
 .text{
@@ -230,8 +239,6 @@ h3{
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  margin: 0 0 0.8em;
-  margin-top: 1.5em;
   font-size: 22px;
   font-weight: 600;
 }
@@ -270,6 +277,12 @@ h3{
   color: #d9d9d9;
 }
 
+.popular_hosting{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1em 3em 0 3em;
+}
+
 /*****HOSTING*****/
 
 .hosting_card_img{
@@ -290,9 +303,6 @@ h3{
   }
 
 .hosting_title h2{
-  margin: 0 0.6em 0.8em;
-  margin-top: 1.5em;
-  margin-top: 1.5em;
   font-size: 22px;
   font-weight: 600;
 }
@@ -302,9 +312,8 @@ h3{
   color: inherit;
   font-size: large;
   font-weight: 600;
-  margin: 1em 1em 3em;
   display: flex;
-  padding-top: 0.5em;
+  margin: 15px;
   }
 
   .text_hosting{
@@ -315,6 +324,21 @@ h3{
     margin: 0.3em 0.8em;
     font-size: 14px;
   }
+
+  .hosting_card{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .hosting_main{
+    background: #F2F2F2;
+    border-radius: 1em;
+    padding: 1.5em;
+    width: 70%;
+    margin-right: 3em;
+}
 
 /*****ACTIVITY*****/
 
@@ -345,8 +369,8 @@ h3{
   object-fit: cover;
 }
 
-.activity_title_marseille{
-  margin: 0 0.8em 1.5em;
+.activity_title{
+  margin: 0 0.6em 0.8em;
   margin-top: 1.5em;
   font-size: 22px;
   font-weight: 600;
@@ -368,7 +392,13 @@ h3{
 }
 
 .footer_contenu_bloc{
-  padding: 1em 0 0 2em;
+  padding: 1em 0 1em 0;
+  display: flex;
+}
+
+.footer_bloc_2,
+.footer_bloc_3{
+  margin-left: 12em;
 }
 
 .list{
@@ -387,11 +417,20 @@ h3{
 .footer_title{
   font-weight: 600;
   font-size: large;
+  margin-left: 40px;
+}
+
+.list li{
+  padding: 5px 0;
 }
 
 
 
 @media screen and (max-width: 600px){
+  .search{
+    margin: 0;
+  }
+
   .search_map{
     display: flex;
   }
@@ -399,6 +438,19 @@ h3{
     border-radius: 1rem 1rem 1rem 1rem;
     padding: 0 1em;
   }
+
+  .search_btn_text{
+    display: none;
+  }
+
+  .containerheadernav_mobile{
+    display: block;
+  }
+
+  .containerheadernav{
+    display: none;
+  }
+
   .headernav ul{
     border-bottom: 3px solid #F2F2F2;
     padding-inline-start: 2em;
@@ -407,28 +459,86 @@ h3{
   .search_input_bloc{
     margin-right: 1em;
   }
+
+  .filter{
+    display: block;
+  }
+
+  .filter_items{
+    margin-left: 0;
+  }
+
+  .popular_hosting{
+    display: block;
+    margin: 0;
+  }
+
+  .background_grey{
+    border-radius: 0;
+    display: block;
+  }
+
+  .hosting_card{
+    display: block;
+  }
+
+  .hosting_title h2{
+    margin: 0 0.6em 0.8em;
+    margin-top: 1.5em;
+  }
+
+  .hosting_main{
+    background: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hosting_view_more{
+    margin: 1em 1em 3em;
+    padding-top: 0.5em;
+  }
+
+  .popular_card figure{
+    margin: 1em;
+  }
+
+  .popular_title{
+    margin: 1em;
+  }
+
+  .text{
+    margin-top: 1.5em;
+  }
+
+  .activity_card{
+    padding: 0 0 2em 0;
+    display: block;
+  }
+
   .footer_contenu{
+    display: block;
+  }
+
+  .footer_contenu_bloc{
+    padding: 1em 0 1em 3em;
     display: block;
   }
 
   .footer_title{
     margin-top: 2em;
+    margin-left: 0;
   }
 
   .list{
     padding: 5px 0;
   }
-  .list li{
-    padding: 5px 0;
-  }
+
+  .footer_bloc_2,
+  .footer_bloc_3{
+    margin-left: 0;
 }
-
-
-@media screen and (max-width: 601px){
-   .containerheadernav{
-     display: none;
-    }
-    .search_btn_text{
-      display: none;
-    }
-  }
+#search_icone{
+  display: block;
+}
+}
