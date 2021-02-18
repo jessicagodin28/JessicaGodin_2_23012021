@@ -376,12 +376,10 @@ h3{
   font-weight: 600;
 }
 
-.activity_card_text{
-  margin: 1.3em;
-}
-
 .activity_card{
   padding: 0 0 2em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /*****FOOTER*****/
@@ -513,6 +511,11 @@ h3{
 
   .activity_card{
     padding: 0 0 2em 0;
+    display: block;
+  }
+
+  .activity_card_text{
+    margin: 1.3em;
     display: block;
   }
 
