@@ -246,14 +246,11 @@ a {
     background: white;
     display: flex;
     margin: 0 18px 14px 18px;
-    -webkit-transform: scale(1);
 	  transform: scale(1);
-	  -webkit-transition: .3s ease-in-out;
 	  transition: .3s ease-in-out;
       }
 
     .popular_card figure:hover {
-      -webkit-transform: scale(1.1);
       transform: scale(1.1);
         }
   
@@ -308,14 +305,11 @@ a {
     border-radius: 1.2rem;
     box-shadow: 0 0 16px #eae5e5;
     margin: 0.6em;
-    -webkit-transform: scale(1);
 	  transform: scale(1);
-	  -webkit-transition: .3s ease-in-out;
 	  transition: .3s ease-in-out;
     }
 
     .hosting_card figure:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     }
   
@@ -368,14 +362,11 @@ a {
     margin: 0;
     margin-top: 15px;
     height: 170px;
-    -webkit-transform: scale(1);
 	  transform: scale(1);
-	  -webkit-transition: .3s ease-in-out;
 	  transition: .3s ease-in-out;
   }
 
   .activity_card figure:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   
