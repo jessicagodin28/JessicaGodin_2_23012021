@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 
 h1 {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 h3 {
@@ -9,10 +16,10 @@ h3 {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  width: 100%;
 }
 
 a {
@@ -20,8 +27,8 @@ a {
   text-decoration: none;
 }
 
-  /*****HEADER*****/
-  
+/*****HEADER*****/
+
 .header {
   display: grid;
   align-items: center;
@@ -33,7 +40,6 @@ a {
   grid-area: logo;
   order: 0;
   padding: 0 2em;
-  height: 3em;
 }
 
 .header_nav {
@@ -44,7 +50,6 @@ a {
 .header_nav ul {
   display: flex;
   justify-content: space-between;
-  font-size: large;
   padding: 0;
   margin: 0;
 }
@@ -54,7 +59,7 @@ a {
   font-weight: 500;
   text-align: center;
   transition-duration: 0.1s;
-  border-bottom: 3px solid #F2F2F2;
+  border-bottom: 3px solid #f2f2f2;
   width: 50%;
 }
 
@@ -64,11 +69,11 @@ a {
 }
 
 .header_nav_menu:hover {
-  color: #0065FC;
+  color: #0065fc;
 }
 
 #hosting {
-  color: #0065FC;
+  color: #0065fc;
 }
 
 .header_signup {
@@ -77,22 +82,16 @@ a {
   grid-area: signup;
   order: 1;
   padding: 2em;
-  color: #0065FC;
+  color: #0065fc;
   font-weight: 600;
 }
 
 .header_nav_menu:hover {
-  border-bottom-color: #0065FC;
-}
-  
-.search_title {
-  font-size: 23px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  border-bottom-color: #0065fc;
 }
 
-  /*****SEARCH*****/
-  
+/*****SEARCH*****/
+
 .search {
   margin: 0 1em;
 }
@@ -101,36 +100,36 @@ a {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-  
+
 .search_map {
   display: flex;
 }
-  
+
 .map {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 1rem 18px;
   border-radius: 1rem 0 0 1rem;
 }
-  
+
 .search_input_zone {
   width: 11rem;
   padding: 0 1rem;
   height: 50px;
   border-right: none;
   border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
-}
-  
-::placeholder {
-  color: rgb(0, 0, 0);
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.3em;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
   font-weight: 600;
 }
-  
+
+::placeholder {
+  color: rgb(0, 0, 0);
+}
+
 .search_btn {
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
   border: none;
   border-radius: 1em 1em 1em 1em;
@@ -138,28 +137,27 @@ a {
   font-size: 1em;
   height: 3.2em;
 }
-  
+
 .search_btn_text {
   display: none;
   cursor: pointer;
 }
-  
+
 .search_input_bloc {
   display: flex;
   width: 90%;
 }
-  
+
 #search_icone {
   display: block;
 }
-  
-  /*****FILTER*****/
-  
+
+/*****FILTER*****/
+
 .filter_title {
   font-size: medium;
-  font-weight: 600;
 }
-  
+
 .filter_icons {
   background-color: #deebff;
   color: #0065fc;
@@ -171,39 +169,40 @@ a {
   width: 18px;
   display: flex;
 }
-  
+
 .filter_items {
   display: flex;
   flex-flow: row wrap;
 }
-  
+
 .filter_logo {
-  border: 2px solid #F2F2F2;
+  border: 2px solid #f2f2f2;
   border-radius: 2em;
   display: flex;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-right: 10px;
   cursor: pointer;
-  transition-duration: 0.1s;
+  transition: background-color 0.1s;
 }
 
 .filter_logo:hover {
-  background: #DEEBFF;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  background: #deebff;
 }
-  
+
 .filter p {
   font-size: 15px;
 }
-  
+
 .filter {
   align-items: baseline;
 }
-  
+
 .logements_txt {
   display: flex;
-  }
-  
+}
+
 .filter_iconsi {
   color: #0065fc;
   background: white;
@@ -213,31 +212,35 @@ a {
   padding: 5px 9px;
   font-size: smaller;
 }
-  
+
 .txt {
   padding-right: 20px;
 }
-  
-  /*****POPULAR*****/
-  
+
+/*****POPULAR*****/
+
 .background_grey {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 5px 0 20px 0;
 }
-  
+
 .popular_title {
-  display: flex;
-  margin: 12px 20px 8px 20px;
+  margin: 2em 1.2em 1.5em;
 }
-  
+
+.title_popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .popular_card_img {
   width: 100%;
   height: 135px;
   border-radius: 1rem 0 0 1em;
   object-fit: cover;
-  max-width: 120px; 
+  max-width: 120px;
 }
-
 
 .popular_card figure {
   padding: 0.3em;
@@ -246,40 +249,37 @@ a {
   background: white;
   display: flex;
   margin: 0 18px 14px 18px;
-	transform: scale(1);
-	transition: .3s ease-in-out;
+  transition-duration: 0.1s;
 }
 
 .popular_card figure:hover {
-    transform: scale(1.1);
+  transform: scale(1.04);
 }
-  
-.text {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
-  font-size: 22px;
-  font-weight: 600;
-}
-  
+
 .popular_card figcaption {
   margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-  
+
+.text {
+  margin: 0;
+  font-size: 15px;
+}
+
 .stars {
   color: #0065fc;
   margin: 5px;
-  font-size: small;
-  margin: 0.5em 0.8em;
+  font-size: 12px;
+  margin: 0;
 }
-  
+
 .stars_popular {
   color: #0065fc;
   font-size: 12px;
-  margin-top: 3.5em;
 }
-  
+
 #star_grey,
 #star_grey1,
 #star_grey2,
@@ -289,36 +289,37 @@ a {
 #star_grey6 {
   color: #d9d9d9;
 }
-  
-  /*****HOSTING*****/
-  
+
+/*****HOSTING*****/
+
 .hosting_card_img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   height: 7.5em;
   object-fit: cover;
 }
-  
+
 .hosting_card figure {
   background-color: white;
   padding: 5px;
   border-radius: 1.2rem;
   box-shadow: 0 0 16px #eae5e5;
   margin: 0.6em;
-	transform: scale(1);
-	transition: .3s ease-in-out;
+  transition-duration: 0.1s;
 }
 
 .hosting_card figure:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
-  
+
+.hosting_card figcaption {
+  margin-left: 1em;
+}
+
 .hosting_title h2 {
-  font-size: 22px;
-  font-weight: 600;
   margin: 1em;
 }
-  
+
 .hosting_view_more {
   text-decoration: none;
   color: inherit;
@@ -327,23 +328,19 @@ a {
   display: flex;
   margin: 15px;
 }
-  
-.text_hosting {
-  margin: 0.3em 0.8em;
-}
-  
-.subtext_hosting {
-  margin: 0.3em 0.8em;
+
+.subtext {
   font-size: 14px;
+  margin-top: 8px;
 }
-  
+
 .hosting_main {
   border-radius: 1em;
   padding: 0.5em;
 }
-  
-  /*****ACTIVITY*****/
-  
+
+/*****ACTIVITY*****/
+
 .activity {
   min-width: 50%;
   text-align: center;
@@ -354,7 +351,7 @@ a {
   color: black;
   text-align: justify;
 }
-  
+
 .activity_card figure {
   background-color: white;
   border-radius: 1.25rem;
@@ -362,27 +359,26 @@ a {
   margin: 0;
   margin-top: 15px;
   height: 170px;
-	transform: scale(1);
-	transition: .3s ease-in-out;
+  transition-duration: 0.1s;
 }
 
 .activity_card figure:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
-  
+
 .activity_card_img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   height: 7em;
   object-fit: cover;
 }
-  
+
 .activity_title {
   margin: 1.5em 0.5em;
   font-size: 22px;
   font-weight: 600;
 }
-  
+
 .activity_Marseille {
   margin: 1em;
 }
@@ -390,246 +386,252 @@ a {
 .activity_card {
   padding: 0 0 2em 0;
 }
-  
+
 .activity_card_text {
-  margin-left: 16px;
+  margin: 14px 0 0 16px;
+  font-weight: 600;
 }
-  
+
 #vieux_port_desktop {
   display: none;
 }
-  
+
 #parc_national_desktop {
   display: none;
 }
-  
-  /*****FOOTER*****/
-  
+
+/*****FOOTER*****/
+
 .footer_contenu {
-  background: #F2F2F2;
+  background: #f2f2f2;
   width: 100%;
 }
-  
+
 .footer_contenu_bloc {
   padding: 1em 0 1em 0;
 }
-  
+
 .list {
   list-style-type: none;
 }
-  
+
 .list a {
   text-decoration: none;
-  color: #333;;
+  color: #333;
 }
-  
+
 .list a:hover {
-  color: rgb(3,3,3);
+  color: rgb(3, 3, 3);
 }
-  
+
 .footer_title {
   font-weight: 600;
   font-size: large;
   margin-left: 40px;
 }
-  
+
 .list li {
   padding: 5px 0;
 }
-  
-    
+
 @media screen and (min-width: 600px) {
-    
-.header {
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo . menu signup";
-    }
-.header_nav_menu:hover {
-  border-top: 3px solid #0065FC;
+  .header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . menu signup";
+  }
+  .header_nav_menu:hover {
+    border-top: 3px solid #0065fc;
+  }
+
+  .header_nav_menu {
+    border-bottom: none;
+    padding: 2em;
+  }
+
+  #hosting {
+    border-top: 3px solid #0065fc;
+  }
+
+  .search_btn_text {
+    display: block;
+  }
+
+  .search_btn {
+    border-radius: 0 1em 1em 0;
+  }
+
+  #search_icone {
+    display: none;
+  }
+
+  .hosting_card {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .activity_card {
+    display: grid;
+  }
 }
 
-.header_nav_menu {
-  border-bottom: none;
-  padding: 2em;
-}
-
-#hosting{
-  border-top: 3px solid #0065FC;
-}
-
-.search_btn_text {
-  display: block;
-}
-    
-.search_btn {
-  border-radius: 0 1em 1em 0
-}
-  
-#search_icone {
-  display: none;
-}
-  
-.hosting_card {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-  column-gap: 1rem;
-  row-gap: 1rem;
-}
-  
-.activity_card {
-  display: grid;
-}
-  
 @media screen and (min-width: 600px) and (max-width: 900px) {
-    
-.hosting_main {
-  border-radius: 1em;
-  padding: 1.5em;
-}
-    
-.activity_card {
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 2em;
-  column-gap: 2em;
-  padding: 0 2em;
-  margin: 2em 0;
+  .hosting_main {
+    border-radius: 1em;
+    padding: 1.5em;
+  }
+
+  .activity_card {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+    padding: 0 2em;
+    margin: 2em 0;
   }
 }
-  
-@media screen and (min-width: 900px) {
-    
-.filter {
-  display: flex;
-}
-  
-.filter_title {
-  margin-right: 2em;
-}
 
-.filter_logo {
-  margin-right: 20px;
-}
-  
-.search_bloc {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.search {
-  margin-left: 2em;
-}
-
-.search_input_zone {
-  width: 13rem;
-}
-  
-.hosting_card {
-  grid-template-columns: repeat(3, 1fr);
-  display: grid;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  margin: 1em 2em;
-}
-  
-.hosting_main {
-  background: #F2F2F2;
-  margin-right: 2em;
-  width: 80%;
-}
-  
-.background_grey {
-  border-radius: 1.2em;
-  height: 96%;
-}
-  
-    .popular_hosting {
-      display: flex;
-      flex-direction: row-reverse;
-      margin: 1em 2em 0 2em;
-    }
-  
-    .stars_popular {
-      margin: 0;
-    }
-  
-    .popular_card figure {
-      margin: 0 30px 32px 30px;
-    }
-  
-    #vieux_port_mobile {
-      display: none;
-    }
-  
-    #vieux_port_desktop {
-      display: block;
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-      height: 88%;
-      object-fit: cover;
-    }
-  
-    #parc_national_mobile {
-      display: none;
-    }
-  
-    #parc_national_desktop {
-      display: block;
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-      height: 88%;
-      object-fit: cover;
-    }
-  
-    .parc_national figure {
-      height: 100%;
-    }
-
-    .activity_title{
-      margin: 3em 0 0.5em 1.5em;
-    }
-  
-    .activity_card {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      row-gap: 2.2em;
-      column-gap: 2rem;
-      padding: 0 2em;
-      margin: 0 0 5em 0;
-    }
-  
-    .activity_card figure {
-      height: 100%;
-    }
-
-    .activity_card_vieux_port {
-      grid-row-end: span 2;
-    }
-
-    .activity_card_fort_de_pomegues{
-      grid-column: 2/2;
-      grid-row: 2/1;
-    }
-
-    .activity_card_iles_du_frioul{
-      grid-column: 2/2;
-      grid-row: 2/2;
-    }
-
-    .activity_card_parc_national{
-      grid-column: 3/4;
-      grid-row-end: span 2;
-    }
-  
-    .footer_contenu_bloc {
-      display: flex;
-      width: 80%;
-      justify-content: space-between;
+@media screen and (min-width: 1000px) {
+  .filter {
+    display: flex;
   }
+
+  .filter_title {
+    margin-right: 2em;
   }
-  
-  @media screen and (min-width: 1140px) {
-    
-    .stars_popular {
-      margin-top: 2.5em;
+
+  .filter_logo {
+    margin-right: 20px;
   }
+
+  .search {
+    margin-left: 2em;
   }
+
+  .search_input_zone {
+    width: 13rem;
+  }
+
+  .hosting_title h2 {
+    margin: 1.5em 0 1em 2em;
+  }
+
+  .hosting_card {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 1em;
+  }
+
+  .hosting_card figcaption {
+    margin: 0.3em;
+  }
+
+  .hosting_main {
+    background: #f2f2f2;
+    margin-right: 2em;
+    width: 80%;
+  }
+
+  .background_grey {
+    border-radius: 1.2em;
+    height: 96%;
+  }
+
+  .popular_hosting {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em 2em 0 2em;
+  }
+
+  .popular_title {
+    margin-left: 2.2em;
+  }
+
+  .popular_card figure {
+    margin: 0 30px 32px 30px;
+  }
+
+  #vieux_port_mobile {
+    display: none;
+  }
+
+  #vieux_port_desktop {
+    display: block;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 88%;
+    object-fit: cover;
+  }
+
+  #parc_national_mobile {
+    display: none;
+  }
+
+  #parc_national_desktop {
+    display: block;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 88%;
+    object-fit: cover;
+  }
+
+  .parc_national figure {
+    height: 100%;
+  }
+
+  .activity_title {
+    margin: 3em 0 0.5em 1.5em;
+  }
+
+  .activity_card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2.2em;
+    column-gap: 2.5rem;
+    padding: 0 2em;
+    margin: 0 0 5em 0;
+  }
+
+  .activity_card figure {
+    height: 100%;
+  }
+
+  .activity_card_vieux_port figure {
+    height: 100%;
+  }
+
+  .activity_card_parc_national figure {
+    height: 100%;
+  }
+
+  .activity_card_vieux_port {
+    grid-row-end: span 2;
+  }
+
+  .activity_card_fort_de_pomegues {
+    grid-column: 2/2;
+    grid-row: 2/1;
+  }
+
+  .activity_card_iles_du_frioul {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+
+  .activity_card_parc_national {
+    grid-column: 3/4;
+    grid-row-end: span 2;
+  }
+
+  .activity_card_img {
+    height: 10em;
+  }
+
+  .footer_contenu_bloc {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+}
