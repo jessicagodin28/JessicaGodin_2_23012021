@@ -451,6 +451,7 @@ a {
 
   #hosting {
     border-top: 3px solid #0065fc;
+    border-bottom: none;
   }
 
   .search_btn_text {
