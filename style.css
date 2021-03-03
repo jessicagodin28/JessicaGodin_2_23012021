@@ -74,6 +74,7 @@ a {
 
 #hosting {
   color: #0065fc;
+  border-bottom: 3px solid #0065fc;
 }
 
 .header_signup {
@@ -112,7 +113,7 @@ a {
 }
 
 .search_input_zone {
-  width: 11rem;
+  width: 14rem;
   padding: 0 1rem;
   height: 50px;
   border-right: none;
