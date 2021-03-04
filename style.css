@@ -478,7 +478,7 @@ a {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   .hosting_main {
     border-radius: 1em;
     padding: 1.5em;
